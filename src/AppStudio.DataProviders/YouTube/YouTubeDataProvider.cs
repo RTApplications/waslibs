@@ -229,7 +229,7 @@ namespace AppStudio.DataProviders.YouTube
 
         private string GetChannelUrl(string channel, int pageSize)
         {
-            var url = $"{BaseUrl}/channels?forUsername={channel}&part=contentDetails&maxResults={pageSize}&key={_tokens.ApiKey}";
+            var url = $"{BaseUrl}/channels?id={channel}&part=contentDetails&maxResults={pageSize}&key={_tokens.ApiKey}";
             return url;
         }
 
